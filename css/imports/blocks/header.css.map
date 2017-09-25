@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,iCAAiC",
+"sources": ["../../../scss/blocks/header.scss"],
+"names": [],
+"file": "header.css"
+}

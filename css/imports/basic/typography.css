@@ -1,0 +1,439 @@
+/*======= Typography =======*/
+body {
+  overflow-x: hidden;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+  color: #666666;
+  font-weight: 400;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #666666;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+.h1 {
+  font-size: 50px;
+  line-height: 69px;
+  margin: 1.4em 0;
+}
+
+h2,
+.h2 {
+  font-size: 36px;
+  line-height: 53px;
+  margin: 1.2em 0;
+}
+
+h3,
+.h3 {
+  font-size: 28px;
+  line-height: 42px;
+  margin: 1.13em 0;
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+  line-height: 38px;
+  margin: 1em 0;
+}
+
+h5,
+.h5 {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0.5em 0;
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 1.10em 0;
+}
+
+h1, .h1, h2, .h2 {
+  font-weight: 700;
+}
+
+h3, .h3, h4, .h4 {
+  font-weight: 600;
+}
+
+h5, .h5, h6, .h6 {
+  font-weight: 600;
+}
+
+h1.text--light, .h1.text--light, h2.text--light, .h2.text--light, h3.text--light, .h3.text--light, h4.text--light, .h4.text--light, h5.text--light, .h5.text--light, h6.text--light, .h6.text--light {
+  font-weight: 200;
+}
+
+ul, ol {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+ul.upper-roman, ol.upper-roman {
+  list-style: upper-roman;
+}
+ul.lower-roman, ol.lower-roman {
+  list-style: lower-roman;
+}
+ul.upper-alpha, ol.upper-alpha {
+  list-style: upper-alpha;
+}
+ul.lower-alpha, ol.lower-alpha {
+  list-style: lower-alpha;
+}
+
+ul.ul--success,
+ol.ul--success {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.ul--success ul,
+ol.ul--success ul {
+  padding-left: 30px;
+}
+ul.ul--success li:before,
+ol.ul--success li:before {
+  font-size: 85%;
+  padding-right: 10px;
+  content: "\e64c";
+  font-family: "themify";
+}
+ul.ul--star,
+ol.ul--star {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.ul--star ul,
+ol.ul--star ul {
+  padding-left: 30px;
+}
+ul.ul--star li:before,
+ol.ul--star li:before {
+  font-size: 85%;
+  padding-right: 10px;
+  content: "\e60a";
+  font-family: "themify";
+}
+
+li {
+  padding: 2px 0;
+}
+
+ul.without--bullets, ol.without--bullets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.aio-lists > ul {
+  margin: 0;
+  padding-left: 1.2em;
+  list-style: none;
+}
+
+.aio-lists > ul > li {
+  position: relative;
+  text-indent: -1.2em;
+  margin-bottom: 0.7em;
+}
+
+.aio-lists > ul > li:before {
+  font-family: 'fontAwesome';
+  font-weight: normal;
+  content: "\f111";
+  font-size: 10px;
+  vertical-align: top;
+  display: inline-block;
+  width: 20px;
+  text-indent: 0;
+  line-height: 24px;
+}
+
+.aio-lists.aio-list-type-check > ul > li:before {
+  font-family: 'themify';
+  content: "\e64c";
+  font-size: 15px;
+}
+
+.aio-lists.aio-list-type-arrow > ul > li:before {
+  font-family: 'themify';
+  content: "\e628";
+  font-size: 15px;
+}
+
+.aio-lists.aio-list-type-pointer > ul > li:before {
+  font-family: 'themify';
+  content: "\e71b";
+  font-size: 15px;
+}
+
+.aio-lists.aio-list-type-cross > ul > li:before {
+  font-family: 'themify';
+  content: "\e646";
+  font-size: 12px;
+}
+
+.aio-lists.aio-list-type-star > ul > li:before {
+  font-family: 'themify';
+  content: "\e60a";
+  font-size: 12px;
+}
+
+.aio-lists.aio-list-type-double-arrow > ul > li:before {
+  font-family: 'themify';
+  content: "\e661";
+  font-size: 12px;
+}
+
+.aio-lists.aio-list-type-square > ul > li:before {
+  font-family: 'fontAwesome';
+  content: "\f0c8";
+  font-size: 10px;
+}
+
+.aio-lists.aio-list-type-circle > ul > li:before {
+  font-family: 'fontAwesome';
+  content: "\f1db";
+  font-size: 12px;
+}
+
+.aio-lists.aio-list-color-success > ul > li:before {
+  color: #5cb85c;
+}
+
+.aio-lists.aio-list-color-info > ul > li:before {
+  color: #5bc0de;
+}
+
+.aio-lists.aio-list-color-danger > ul > li:before {
+  color: #f0ad4e;
+}
+
+.aio-lists.aio-list-color-warning > ul > li:before {
+  color: #d9534f;
+}
+
+blockquote {
+  border-left: 3px solid #1ABC9C;
+  font-style: italic;
+  font-weight: 500;
+  padding: 15px 15px 15px 20px;
+  margin: 20px 20px 20px 30px;
+  font-size: 18px;
+  line-height: 28px;
+}
+blockquote.aio-blockquote-reverse {
+  border-left: none;
+  border-right: 3px solid #1ABC9C;
+  text-align: right;
+  padding: 15px 20px 15px 15px;
+  margin: 20px 30px 20px 20px;
+}
+blockquote.aio-blockquote--solid-bg {
+  border: none;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+blockquote.aio-blockquote--bordered {
+  border: 4px double #aaaaaa;
+  position: relative;
+  overflow: hidden;
+}
+blockquote.quote--icon {
+  position: relative;
+}
+blockquote.quote--icon::before {
+  content: "\e67e";
+  font-family: "themify";
+  position: absolute;
+  right: 10px;
+  bottom: -30px;
+  font-size: 145px;
+  line-height: 1;
+  opacity: 0.3;
+  font-weight: 700;
+}
+blockquote.quote--icon.quote--icon-large:before {
+  font-size: 200px;
+}
+blockquote.quote--icon.quote--icon-medium:before {
+  font-size: 150px;
+}
+blockquote.quote--icon.quote--icon-small:before {
+  font-size: 100px;
+  right: 10px;
+  bottom: -25px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+hr {
+  margin: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #f1f1f1;
+}
+
+a {
+  color: #1ABC9C;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+input, textarea {
+  padding: 0 15px;
+  border: 1px solid #f1f1f1;
+  height: 40px;
+  width: 100%;
+}
+input:focus, textarea:focus {
+  outline: none;
+}
+
+mark,
+.mark,
+.aio-highlight {
+  padding: 0 5px;
+  background: #1ABC9C;
+  color: #fff;
+}
+
+.aio-dropcap {
+  font-size: 42px;
+  line-height: 1;
+  color: #1ABC9C;
+  text-transform: uppercase;
+  float: left;
+  margin-right: 8px;
+}
+.aio-dropcap.aio-dropcap--circle {
+  line-height: 40px;
+  margin-top: 8px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 32px;
+  background: #1ABC9C;
+  border-radius: 100%;
+  color: #fff;
+}
+.aio-dropcap.aio-dropcap--rounded {
+  line-height: 40px;
+  margin-top: 8px;
+  font-size: 32px;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  background: #1ABC9C;
+  border-radius: 3px;
+  color: #fff;
+}
+.aio-dropcap.aio-dropcap--bordered {
+  line-height: 35px;
+  margin-top: 8px;
+  font-size: 25px;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  border-radius: 100%;
+  border: 2px solid #1ABC9C;
+  color: #1ABC9C;
+}
+.aio-dropcap.aio-dropcap--bordered.aio-dropcap--large {
+  line-height: 67px;
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  border: 5px solid #1ABC9C;
+}
+.aio-dropcap.aio-dropcap--large {
+  display: inline-block;
+  height: auto;
+  font-size: 60px;
+  line-height: 1;
+}
+.aio-dropcap.aio-dropcap--rounded.aio-dropcap--large, .aio-dropcap.aio-dropcap--circle.aio-dropcap--large {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  margin-right: 15px;
+}
+
+.aio-separetor {
+  margin: 3em 0;
+}
+
+.aio-separetor {
+  margin: 3em 0;
+}
+.aio-separetor.aio-sep-solid {
+  border-top: 1px solid #1ABC9C;
+}
+.aio-separetor.aio-sep-dotted {
+  border-top: 2px dotted #1ABC9C;
+}
+.aio-separetor.aio-sep-dashed {
+  border-top: 2px dashed #1ABC9C;
+}
+.aio-separetor.aio-sep-double {
+  border-top: 6px double #1ABC9C;
+}
+.aio-separetor.aio-sep-groove {
+  border-top: 6px groove #1ABC9C;
+}
+.aio-separetor.aio-sep-color-info {
+  border-color: #5bc0de;
+}
+.aio-separetor.aio-sep-color-primary {
+  border-color: #337ab7;
+}
+.aio-separetor.aio-sep-color-warning {
+  border-color: #f0ad4e;
+}
+.aio-separetor.aio-sep-color-danger {
+  border-color: #d9534f;
+}
+.aio-separetor.aio-sep-color-success {
+  border-color: #5cb85c;
+}
+
+/*# sourceMappingURL=typography.css.map */
