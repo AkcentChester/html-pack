@@ -1,5 +1,5 @@
 /*======= Spacing =======*/
-.no-padding {
+.no--padding {
   padding: 0;
 }
 
@@ -523,7 +523,7 @@
   padding-right: 200px;
 }
 
-.no-margin {
+.no--margin {
   margin: 0;
 }
 

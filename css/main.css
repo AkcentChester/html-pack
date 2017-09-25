@@ -12,8 +12,18 @@
 **********************************************************************************/
 
 
-
+/*Basic styles*/
 @import url(imports/basic/reset.css);
 @import url(imports/basic/typography.css);
 @import url(imports/basic/spacing.css);
 @import url(imports/basic/helper-class.css);
+
+/*Elements*/
+@import url(imports/elements/section-title.css);
+@import url(imports/elements/button.css);
+
+/*Blocks*/
+@import url(imports/blocks/header.css);
+@import url(imports/blocks/navigation.css);
+@import url(imports/blocks/footer.css);
+

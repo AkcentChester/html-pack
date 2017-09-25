@@ -5,10 +5,24 @@
 *{
     @include box-sizing(border-box);
 }
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+}
 html {
     color: $body-color;
     font-size: $body-font-size;
     line-height: $body-line-height;
+    font-size: 87.5%;
 }
 ::-moz-selection {
     background: $theme-color;

@@ -52,6 +52,7 @@
 .color--white{
 	color: #ffffff;
 }
+
 // Background
 .bg--theme{
 	background: $theme-color;
@@ -70,128 +71,7 @@
 }
 
 
-
-// Material Background Colors
-// ------------------------------
-.mtrl-bg-red{
-	background: #F34236 !important;
-}
-.mtrl-bg-pink{
-	background: #E81E62 !important;
-}
-.mtrl-bg-purple{
-	background: #9B27AF !important;
-}
-.mtrl-bg-deep-purple{
-	background: #663AB6 !important;
-}
-.mtrl-bg-indigo{
-	background: #3E50B4 !important;
-}
-.mtrl-bg-blue{
-	background: #2195F2 !important;
-}
-.mtrl-bg-light-blue{
-	background: #03A8F3 !important;
-}
-.mtrl-bg-cyen{
-	background: #00BBD3 !important;
-}
-.mtrl-bg-teal{
-	background: #009587 !important;
-}
-.mtrl-bg-green{
-	background: #4BAE4F !important;
-}
-.mtrl-bg-light-green{
-	background: #8AC249 !important;
-}
-.mtrl-bg-lime{
-	background: #CCDB39 !important;
-}
-.mtrl-bg-yellow{
-	background: #FEEA3B !important;
-}
-.mtrl-bg-amber{
-	background: #FEC007 !important;
-}
-.mtrl-bg-orange{
-	background: #FE9700 !important;
-}
-.mtrl-bg-deep-orange{
-	background: #FE5622 !important;
-}
-.mtrl-bg-brown{
-	background: #785447 !important;
-}
-.mtrl-bg-gray{
-	background: #9D9D9D !important;
-}
-.mtrl-bg-light{
-	background: #5F7C8A !important;
-}
-
-// Material Colors
-// -------------------------
-.mtrl-color-red{
-	color: #F34236 !important;
-}
-.mtrl-color-pink{
-	color: #E81E62 !important;
-}
-.mtrl-color-purple{
-	color: #9B27AF !important;
-}
-.mtrl-color-deep-purple{
-	color: #663AB6 !important;
-}
-.mtrl-color-indigo{
-	color: #3E50B4 !important;
-}
-.mtrl-color-blue{
-	color: #2195F2 !important;
-}
-.mtrl-color-light-blue{
-	color: #03A8F3 !important;
-}
-.mtrl-color-cyen{
-	color: #00BBD3 !important;
-}
-.mtrl-color-teal{
-	color: #009587 !important;
-}
-.mtrl-color-green{
-	color: #4BAE4F !important;
-}
-.mtrl-color-light-green{
-	color: #8AC249 !important;
-}
-.mtrl-color-lime{
-	color: #CCDB39 !important;
-}
-.mtrl-color-yellow{
-	color: #FEEA3B !important;
-}
-.mtrl-color-amber{
-	color: #FEC007 !important;
-}
-.mtrl-color-orange{
-	color: #FE9700 !important;
-}
-.mtrl-color-deep-orange{
-	color: #FE5622 !important;
-}
-.mtrl-color-brown{
-	color: #785447 !important;
-}
-.mtrl-color-gray{
-	color: #9D9D9D !important;
-}
-.mtrl-color-light{
-	color: #5F7C8A !important;
-}
-
-
+// Font weights
 .fw--900{
 	font-weight: 900;
 }
@@ -210,9 +90,8 @@
 .fw--300{
 	font-weight: 300;
 }
-.fw--200{
-	font-weight: 200;
-}
+
+// Text specialized
 .text--italic{
 	font-style: italic;
 }
@@ -222,12 +101,42 @@
 .text--underline{
 	font-style: underline;
 }
-.font-body{
+
+// Font specialized
+.body--font{
 	font-family: $body-font;
 }
-.font-stylish{
-	font-family: $stylish-font;
-}
-.font-heading{
+.heading--font{
 	font-family: $heading-font;
+}
+
+
+
+// Overlay styles
+[data-overlay], [data-black-overlay]{
+	position: relative;
+}
+[data-overlay] > div, [data-overlay] > *, [data-black-overlay] > div, [data-black-overlay] > *{
+	position: relative;
+	z-index: 2;
+}
+[data-overlay]:before, [data-black-overlay]:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+[data-overlay]:before{
+	background-color: $theme-color;
+}
+[data-black-overlay]:before{
+	background-color: #000000;
+}
+@for $i from 1 through 10{
+	[data-overlay="#{$i}"]:before, [data-black-overlay="#{$i}"]:before{
+		opacity: #{$i * 0.10};
+	}
 }

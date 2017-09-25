@@ -4,7 +4,7 @@
 
 
 // Define padding
-.no-padding{
+.no--padding{
 	padding: 0;
 }
 @for $i from 1 through 20{
@@ -42,7 +42,7 @@
 
 
 // Define Margin
-.no-margin{
+.no--margin{
 	margin: 0;
 }
 @for $i from 1 through 20{

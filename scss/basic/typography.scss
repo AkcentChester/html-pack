@@ -2,8 +2,8 @@
 @import "../mixins";
 /*======= Typography =======*/
 
-body {
-  overflow-x: hidden;
+body{
+	overflow-x: hidden;
   font-size: $body-font-size;
   line-height: $body-line-height;
   -webkit-font-smoothing: antialiased;
@@ -15,58 +15,56 @@ body {
 input::placeholder, textarea::placeholder{
    color: $body-color;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
-  margin: 0;
-  padding: 0;
-}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
   font-family: $heading-font;
 }
 h1,
 .h1 {
-  font-size: 50px;
-  line-height: 69px;
-  margin:1.4em 0;
+  font-size: 3.14em;
+  line-height: 1.3em;
 }
 h2,
 .h2 {
-  font-size: 36px;
-  line-height: 53px;
-  margin:1.2em 0;
+  font-size: 2.4em;
+  line-height: 1.4em;
 }
 h3,
 .h3 {
-  font-size: 28px;
-  line-height: 42px;
-  margin:1.13em 0;
+  font-size: 1.8em;
+  line-height: 1.5em;
 }
 h4,
 .h4 {
-  font-size: 24px;
-  line-height: 38px;
-  margin:1em 0;
+  font-size: 1.4em;
+  line-height: 1.6em;
 }
 h5,
 .h5 {
-  font-size: 20px;
-  line-height: 30px;
-  margin:0.5em 0;
+  font-size: 1em;
+  line-height: 1.8em;
 }
 h6,
 .h6 {
-  font-size: 16px;
-  line-height: 25px;
-  margin:1.10em 0;
+  font-size: 0.85em;
+  line-height: 2em;
 }
-
-
+@media all and (max-width: 767px) {
+  h1,
+  .h1 {
+    font-size: 2.4em;
+    line-height: 1.4em;
+  }
+  h2,
+  .h2 {
+    font-size: 1.8em;
+    line-height: 1.5em;
+  }
+  h3,
+  .h3 {
+    font-size: 1.4em;
+    line-height: 1.6em;
+  }
+}
 h1, .h1, h2, .h2{
   font-weight: 700;
 }
@@ -74,382 +72,42 @@ h3, .h3, h4, .h4{
   font-weight: 600;
 }
 h5, .h5, h6, .h6{
+  font-weight: 500;
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-bottom: 1.8em;
+}
+ul,
+ol{
+  list-style: none;
+  line-height: 1.8em;
+}
+ul.bullets{
+  list-style: inside;
+}
+ol {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+}
+blockquote {
+  font-size: 1.8em;
+  line-height: 1.5em;
+  padding: 0;
+  margin: 0;
+  border-left: 0;
+}
+strong {
   font-weight: 600;
 }
-
-// Light 
-
-h1.text--light, .h1.text--light, h2.text--light, .h2.text--light, h3.text--light, .h3.text--light, h4.text--light, .h4.text--light, h5.text--light, .h5.text--light, h6.text--light, .h6.text--light{
-  font-weight: 200;
-}
-
-
-
-
-
-// Lists style 
-
-ul, ol{
-  margin-top: 2px;
-  margin-bottom: 10px;
-  &.upper-roman{
-    list-style: upper-roman;
-  }
-  &.lower-roman{
-    list-style: lower-roman;
-  }
-  &.upper-alpha{
-    list-style: upper-alpha;
-  }
-  &.lower-alpha{
-    list-style: lower-alpha;
-  }
-}
-ul, 
-ol{
-  &.ul--success{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    ul{
-      padding-left: 30px;
-    }
-    li{
-      &:before{
-        font-size: 85%;
-        padding-right: 10px;
-        content: "\e64c";
-        font-family: "themify";
-      }
-    }
-  }
-  &.ul--star{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    ul{
-      padding-left: 30px;
-    }
-    li{
-      &:before{
-        font-size: 85%;
-        padding-right: 10px;
-        content: "\e60a";
-        font-family: "themify";
-      }
-    }
-  }
-}
-li{
-  padding: 2px 0;
-}
-ul.without--bullets, ol.without--bullets{
-  margin: 0;
-  padding: 0;
-  list-style:none;
-}
-
-// Aio List Style
-.aio-lists > ul{
-  margin: 0;
-  padding-left: 1.2em;
-  list-style: none;
-}
-.aio-lists > ul > li {
-    position: relative;
-    text-indent: -1.2em;
-    margin-bottom: 0.7em;
-}
-.aio-lists > ul > li:before {
-    font-family: 'fontAwesome';
-    font-weight: normal;
-    content: "\f111";
-    font-size: 10px;
-    vertical-align: top;
-    display: inline-block;
-    width: 20px;
-    text-indent: 0;
-    line-height: 24px;
-}
-
-.aio-lists.aio-list-type-check > ul > li:before {
-    font-family: 'themify';
-    content: "\e64c";
-    font-size: 15px;
-}
-.aio-lists.aio-list-type-arrow > ul > li:before {
-    font-family: 'themify';
-    content: "\e628";
-    font-size: 15px;
-}
-.aio-lists.aio-list-type-pointer > ul > li:before {
-    font-family: 'themify';
-    content: "\e71b";
-    font-size: 15px;
-}
-.aio-lists.aio-list-type-cross > ul > li:before {
-    font-family: 'themify';
-    content: "\e646";
-    font-size: 12px;
-}
-.aio-lists.aio-list-type-star > ul > li:before {
-    font-family: 'themify';
-    content: "\e60a";
-    font-size: 12px;
-}
-.aio-lists.aio-list-type-double-arrow > ul > li:before {
-    font-family: 'themify';
-    content: "\e661";
-    font-size: 12px;
-}
-.aio-lists.aio-list-type-square > ul > li:before {
-    font-family: 'fontAwesome';
-    content: "\f0c8";
-    font-size: 10px;
-}
-.aio-lists.aio-list-type-circle > ul > li:before {
-    font-family: 'fontAwesome';
-    content: "\f1db";
-    font-size: 12px;
-}
-
-.aio-lists.aio-list-color-success > ul > li:before{
-  color: $color-success;
-}
-.aio-lists.aio-list-color-info > ul > li:before{
-  color: $color-info;
-}
-.aio-lists.aio-list-color-danger > ul > li:before{
-  color: $color-warning;
-}
-.aio-lists.aio-list-color-warning > ul > li:before{
-  color: $color-danger;
-}
-
-
-
-
-
-
-
-
-
-// Blockquote
-blockquote {
-  border-left:3px solid $theme-color;
-  font-style: italic;
-  font-weight:500;
-  padding:15px 15px 15px 20px;
-  margin:20px 20px 20px 30px;
-  font-size: 18px;
-  line-height: 28px;
-  &.aio-blockquote-reverse{
-    border-left: none;
-    border-right: 3px solid $theme-color;
-    text-align: right;
-    padding:15px 20px 15px 15px;
-    margin:20px 30px 20px 20px;
-  }
-  &.aio-blockquote--solid-bg{
-    border: none;
-    margin: 20px 0;
-    position: relative;
-    overflow: hidden;
-  }
-  &.aio-blockquote--bordered{
-    border: 4px double $border-color-medium;
-    position: relative;
-    overflow: hidden;
-  }
-  &.quote--icon{
-    position: relative;
-    &::before{
-      content: "\e67e";
-      font-family: "themify";
-      position: absolute;
-      right: 10px;
-      bottom: -30px;
-      font-size: 145px;
-      line-height: 1;
-      opacity: 0.3;
-      font-weight: 700;
-    }
-    &.quote--icon-large{
-      &:before{
-        font-size: 200px;
-      }
-    }
-    &.quote--icon-medium{
-      &:before{
-        font-size: 150px;
-      }
-    }
-    &.quote--icon-small{
-      &:before{
-        font-size: 100px;
-        right: 10px;
-        bottom: -25px;
-      }
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-strong {
-   font-weight: 700;
-}
-hr{
-  margin: 0;
-  display: block;
-  width: 100%;
-  height: 1px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-top: 1px solid $border-color-light;
-}
-a{
-  color: $theme-color;
-	@include transition(0.3s);
-   &:hover, &:focus, &:active{
-      text-decoration:none;
-      outline: none;
-   }
-}
-
-input, textarea{
-   padding:0 15px; 
-   border: 1px solid $border-color-light;
-   height: 40px;
-   width:100%;
-   &:focus{
-      outline: none;
-   }
-}
-mark, 
-.mark, 
-.aio-highlight{
-  padding:0 5px;
-  background: $theme-color;
-  color: #fff;
-}
-.aio-dropcap{
-  font-size: 42px;
-  line-height: 1;
-  color: $theme-color;
-  text-transform: uppercase;
-  float: left;
-  margin-right: 8px;
-  &.aio-dropcap--circle{
-    line-height: 40px;
-    margin-top: 8px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    font-size: 32px;
-    background: $theme-color;
-    border-radius: 100%;
-    color: #fff;
-  }
-  &.aio-dropcap--rounded{
-    line-height: 40px;
-    margin-top: 8px;
-    font-size: 32px;
-    text-align: center;
-    height:40px;
-    width: 40px;
-    background: $theme-color;
-    border-radius: $theme-radius;
-    color: #fff;
-  }
-  &.aio-dropcap--bordered{
-    line-height: 35px;
-    margin-top: 8px;
-    font-size: 25px;
-    text-align: center;
-    height:40px;
-    width: 40px;
-    background: transparent;
-    border-radius: 100%;
-    border: 2px solid $theme-color;
-    color: $theme-color;
-      &.aio-dropcap--large{
-        line-height: 67px;
-        width: 80px;
-        height: 80px;
-        margin-right: 15px;
-        border: 5px solid $theme-color;
-      }
-  }
-  &.aio-dropcap--large{
-    display: inline-block;
-    height: auto;
-    font-size: 60px;
-    line-height: 1;
-  }
-  &.aio-dropcap--rounded, &.aio-dropcap--circle{
-    &.aio-dropcap--large{
-      width: 80px;
-      height: 80px;
-      line-height: 80px;
-      margin-right: 15px;
-    }
-  }
-}
-
-
-// Separetor
-.aio-separetor{
-  margin: 3em 0;
-}
-.aio-separetor{
-  margin: 3em 0;
-  &.aio-sep-solid{
-    border-top: 1px solid $theme-color;
-  }
-  &.aio-sep-dotted{
-    border-top: 2px dotted $theme-color;
-  }
-  &.aio-sep-dashed{
-    border-top: 2px dashed $theme-color;
-  }
-  &.aio-sep-double{
-    border-top: 6px double $theme-color;
-  }
-  &.aio-sep-groove{
-    border-top: 6px groove $theme-color;
-  }
-  &.aio-sep-color-info{
-    border-color: $color-info;
-  }
-  &.aio-sep-color-primary{
-    border-color: $color-primary;
-  }
-  &.aio-sep-color-warning{
-    border-color: $color-warning;
-  }
-  &.aio-sep-color-danger{
-    border-color: $color-danger;
-  } 
-  &.aio-sep-color-success{
-    border-color: $color-success;
-  } 
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
 }
