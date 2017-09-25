@@ -1,0 +1,79 @@
+@import "../variables";
+@import "../mixins";
+/*======= Spacing =======*/
+
+
+// Define padding
+.no-padding{
+	padding: 0;
+}
+@for $i from 1 through 20{
+	.pt-#{10 * $i}{
+		padding-top: #{10 * $i}px;
+	}
+}
+@for $i from 1 through 20{
+	.pb-#{10 * $i}{
+		padding-bottom: #{10 * $i}px;
+	}
+}
+@for $i from 1 through 20{
+	.ptb-#{10 * $i}{
+		padding-top: #{10 * $i}px;
+		padding-bottom: #{10 * $i}px;
+	}
+}
+@for $i from 1 through 20{
+	.pl-#{10 * $i}{
+		padding-left: #{10 * $i}px;
+	}
+}
+@for $i from 1 through 20{
+	.pr-#{10 * $i}{
+		padding-right: #{10 * $i}px;
+	}
+}
+@for $i from 1 through 20{
+	.plr-#{10 * $i}{
+		padding-left: #{10 * $i}px;
+		padding-right: #{10 * $i}px;
+	}
+}
+
+
+// Define Margin
+.no-margin{
+	margin: 0;
+}
+@for $i from 1 through 20{
+	.mt-#{10 * $i}{
+		margin-top: #{10 * $i}px;
+	}
+}
+@for $i from 1 through 20{
+	.mb-#{10 * $i}{
+		margin-bottom: #{10 * $i}px;
+	}
+}
+@for $i from 1 through 20{
+	.mtb-#{10 * $i}{
+		margin-top: #{10 * $i}px;
+		margin-bottom: #{10 * $i}px;
+	}
+}
+@for $i from 1 through 20{
+	.ml-#{10 * $i}{
+		margin-left: #{10 * $i}px;
+	}
+}
+@for $i from 1 through 20{
+	.mr-#{10 * $i}{
+		margin-right: #{10 * $i}px;
+	}
+}
+@for $i from 1 through 20{
+	.mlr-#{10 * $i}{
+		margin-left: #{10 * $i}px;
+		margin-right: #{10 * $i}px;
+	}
+}
