@@ -1,5 +1,5 @@
 {
-  "name": "chester-html-pack",
+  "name": "chester-pack",
   "homepage": "https://github.com/AkcentChester/html-pack",
   "authors": [
     "AkcentChester"
@@ -7,7 +7,7 @@
   "description": "This pack contains all needed files for quickly start a frontend project.",
   "main": "",
   "keywords": [
-    "chester-html-pack"
+    "chester-pack"
   ],
   "license": "MIT",
   "private": false,
