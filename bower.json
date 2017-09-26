@@ -1,0 +1,21 @@
+{
+  "name": "chester-html-pack",
+  "homepage": "https://github.com/AkcentChester/html-pack",
+  "authors": [
+    "AkcentChester"
+  ],
+  "description": "This pack contains all needed files for quickly start a frontend project.",
+  "main": "",
+  "keywords": [
+    "chester-html-pack"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
