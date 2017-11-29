@@ -46,7 +46,8 @@
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-left: 0; }
     .header__icons ul li {
       padding: 0 5px; }
       .header__icons ul li:first-child {

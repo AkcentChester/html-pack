@@ -12,7 +12,8 @@ nav.menu {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-left: 0; }
     nav.menu ul li {
       padding: 0 12px; }
       nav.menu ul li a {

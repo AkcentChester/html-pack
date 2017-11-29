@@ -12,3 +12,5 @@
 **********************************************************************************/
 
 @import url(plugins/font-awesome.min.css);
+@import url(plugins/slick.min.css);
+@import url(plugins/fakeloader.css);

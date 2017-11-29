@@ -12,6 +12,7 @@ nav.menu{
 	ul{
 		@include flexbox();
 		margin-bottom: 0;
+		padding-left: 0;
 		li{
 			padding: 0 12px;
 			a{

@@ -80,11 +80,12 @@ $amazon:                   #E47911;
 
 
 // Layouts
-$desktop-device : 'only screen and (min-width: 1600px) and (max-width: 1919px)';
-$laptop-device : 'only screen and (min-width: 1200px) and (max-width: 1599px)';
-$notebook-device : 'only screen and (min-width: 992px) and (max-width: 1199px)';
-$tablet-device:'only screen and (min-width: 768px) and (max-width: 991px)';
-$large-mobile:'only screen and (max-width: 767px)';
-$small-mobile: 'only screen and (max-width: 576px)';
+$sp-layout : 'only screen and (min-width: 1920px)';
+$xx-layout : 'only screen and (min-width: 1600px) and (max-width: 1919px)';
+$xlg-layout : 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$lg-layout : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-layout:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm-layout:'only screen and (max-width: 767px)';
+$xs-layout: 'only screen and (max-width: 576px)';
 
 

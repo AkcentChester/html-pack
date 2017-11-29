@@ -16,7 +16,9 @@
 			[ INDEX ]
 =================================================================================
 
-	Activation index here
+	Scroll Up Activation
+	Banner Slider Active
+	Fake Loader
 
 =================================================================================
 			[ END INDEX ]
@@ -25,6 +27,30 @@
 (function($) {
 	'use strict';
 
+	
+	/*============ Scroll Up Activation ============*/
+	$.scrollUp({
+	    scrollText: '<i class="fa fa-angle-up"></i>',
+	    easingType: 'linear',
+	    scrollSpeed: 900,
+	    animation: 'slide'
+	});
+
+
+
+
+	/*============ Fake Loader ============*/
+	$('.fakeloader').fakeLoader({
+	    timeToHide:1200,
+	    bgColor:'#000000',
+	    spinner:'spinner2'
+	});
+
+
+
+	
+	/*============ Banner Slider Active ============*/
+	$('.banner-slider-active').slick();
 
 
 })(jQuery);
