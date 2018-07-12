@@ -4,11 +4,28 @@
 	Description: A perfect template to build beautiful and unique medical websites. It comes with nice and clean design.
 	Version: 1.0
 
-	Note: This is plugins css.
+	Note: This is main js.
 
 **********************************************************************************/
 
+/**************************************************************
+	
+	STYLESHEET INDEXING
+	|
+	|
+	|___ Activation List
+	|
+	|
+	|___ END STYLESHEET INDEXING
 
-@import 'font-awesome.min.css';
-@import 'meanmenu.css';
-@import 'slick.min.css';
+***************************************************************/
+
+
+(function($){
+    'use strict';
+    
+
+    // Code Goes Here
+
+
+})(jQuery);

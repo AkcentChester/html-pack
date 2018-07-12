@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,iCAAiC;AAEjC,cAAc;EACb,UAAU,EAAE,IAAI",
-"sources": ["../../../scss/elements/section-title.scss"],
-"names": [],
-"file": "section-title.css"
-}

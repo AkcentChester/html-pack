@@ -1,34 +1,29 @@
 //===== Colors =====//
-$theme-color: #1ABC9C;
-$body-color: #666666;
+$theme-color: #13bfb1;
+$secondary-color: #3498db;
+$body-color: #555555;
 $heading-color: #333333;
+$bg-grey: #f5f5f5;
+$border-color: #cccccc;
+
 
 //===== Font Family =====//
-$body-font: 'Roboto', sans-serif;
-$heading-font: 'Roboto', sans-serif;
+$body-font: 'Lato', sans-serif;
+$heading-font: 'Raleway', sans-serif;
+
 
 //===== Line Height =====//
 $body-line-height: 24px;
 
-//===== Radius  =====//
-$theme-radius: 3px;
-
 
 //==== Font size =====//
-$body-font-size: 14px;
-
-//===== Border color ======//
-$border-color-light: #eeeeee;
-$border-color-medium: #aaaaaa;
-$border-color-dark: #333333;
-
-//===== Alerts color  =====//
-$color-primary: #337ab7;
-$color-success: #5cb85c;
-$color-info: #5bc0de;
-$color-warning: #f0ad4e;
-$color-danger: #d9534f;
-
+$body-font-size: 16px;
+$h1: 42px;
+$h2: 30px;
+$h3: 26px;
+$h4: 22px;
+$h5: 18px;
+$h6: 14px;
 
 
 //===== Social Colors =====//
@@ -41,6 +36,7 @@ $flickr:                   #FF0084;
 $dribbble:                 #EA4C89;
 $google:                   #DD4B39;
 $skype:                    #00AFF0;
+$behance:                  #0057ff;
 $youtube:                  #C4302B;
 $vimeo:                    #86C9EF;
 $yahoo:                    #720E9E;
@@ -69,10 +65,10 @@ $cc-stripe:                #008CDD;
 $drupal:                   #27537A;
 $get-pocket:               #EE4056;
 $bitbucket:                #0E4984;
-$stack-overflow:            #EF8236;
-$hacker-news:               #FF6600;
+$stack-overflow:           #EF8236;
+$hacker-news:              #FF6600;
 $xing:                     #126567;
-$instagram:                #3F729B;
+$instagram:                #D82E86;
 $quora:                    #A82400;
 $openid:                   #E16309;
 $steam:                    #111111;
@@ -84,8 +80,6 @@ $sp-layout : 'only screen and (min-width: 1920px)';
 $xx-layout : 'only screen and (min-width: 1600px) and (max-width: 1919px)';
 $xlg-layout : 'only screen and (min-width: 1200px) and (max-width: 1599px)';
 $lg-layout : 'only screen and (min-width: 992px) and (max-width: 1199px)';
-$md-layout:'only screen and (min-width: 768px) and (max-width: 991px)';
-$sm-layout:'only screen and (max-width: 767px)';
-$xs-layout: 'only screen and (max-width: 576px)';
-
-
+$md-layout : 'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm-layout : 'only screen and (max-width: 767px)';
+$xs-layout : 'only screen and (max-width: 575px)';
